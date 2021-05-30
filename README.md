@@ -1,4 +1,5 @@
 # Blood Cancer detection
+![Leukemia_vs_normalproject](https://user-images.githubusercontent.com/40186859/120111632-69d6c180-c192-11eb-9822-9981da9a26fd.png)
 
 ## Introduction
 
@@ -51,3 +52,6 @@ Following are the expertise I have gained as a researcher:
 
 * The segmentation method has been proposed using color-based clustering to acquire the nucleus region and cytoplasm filed from stained images of blood smears. The SVM classifiers are introduced with the correct characteristics and the results are satisfactory.
 * Automatically distinguish white blood cells (WBCs) from peripheral blood images and recognize five forms of WBCs they are eosinophil, basophil, neutrophil, monocyte, and lymphocyte. Eosinophil and basophil from other WBCs are first detected with a granularity attribute by SVM. The other three forms are then identified using CNN to extract features, and they are random forest to distinguish certain WBC.
+
+![block_diagram_blood_cancer](https://user-images.githubusercontent.com/40186859/120111561-19f7fa80-c192-11eb-98b5-9d566d8549b8.png)
+*Figure  01: Block Diagram*
