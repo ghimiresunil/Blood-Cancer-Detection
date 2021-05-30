@@ -41,3 +41,13 @@ Some of the key achievement while doing blood cancer detection I have found exis
 needle. The extracted sample is examined under a microscope to look for irregular cells.
 * Cytogenetic analysis: To help identify individual chromosomes, cytogenetic testing takes the blood or bone marrow. It shows chromosome abnormalities while help diagnose and identify the leukemia type. Typically reports are accessible in 3 weeks’ time.
 * Immunohistochemistry: In immunohistochemistry, the blood sample of the cells produces unique antibodies and the difference of color can be seen under the microscope that allows to determine which kinds of cells are present.
+
+
+While doing this project I have found before CNN there are several algorithms that people used for image classification. People used to create images features and feed them into some classification algorithm such as SVM. Some algorithms also used image-level pixel values as a vector of features. For example, you may be able to train an SVM with 784 features in which each
+feature is the pixel value for an image of 28 × 28. The automated attribute extractors from the image can be thought of as CNNs. Although we lack a lot of spatial contact between pixels if we use an algorithm with a pixel vector, a CNN essentially utilizes neighboring pixel knowledge to analyze the picture by convolution first and only using a predictive layer at the end. Yann le cun first proposed this definition for digit classification in 1998, in which he used a single layer of convolution. It was later popularized in 2012 by Alex net which used multiple layers of convolution to achieve state of the art on the net of photos. So, henceforth make them am algorithm
+of choice for challenges of image classification.
+
+Following are the expertise I have gained as a researcher:
+
+* The segmentation method has been proposed using color-based clustering to acquire the nucleus region and cytoplasm filed from stained images of blood smears. The SVM classifiers are introduced with the correct characteristics and the results are satisfactory.
+* Automatically distinguish white blood cells (WBCs) from peripheral blood images and recognize five forms of WBCs they are eosinophil, basophil, neutrophil, monocyte, and lymphocyte. Eosinophil and basophil from other WBCs are first detected with a granularity attribute by SVM. The other three forms are then identified using CNN to extract features, and they are random forest to distinguish certain WBC.
